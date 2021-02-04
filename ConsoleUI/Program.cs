@@ -12,7 +12,7 @@ namespace ConsoleUI
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
 
-            foreach (var product in productManager.GetByUnitPrice(5, 10))
+            foreach (var product in productManager.GetByUnitPrice(40, 100))
             {
                 Console.WriteLine(product.ProductName);
             }
